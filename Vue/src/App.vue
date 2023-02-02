@@ -1,14 +1,17 @@
 <script>
   export default{
-    name:'App',
+    data(){
+      return{
+        name:'David',
+        surn:'Avagyan',
+      }
+    }
   }
 </script>
 
 <template>
-  <div> 
-    <h1> Hi, this page is for learning Vue </h1>
-    <p> I will use it to perform tasks </p>
-  </div>
+  <div> {{name}} </div>
+  <div> {{surn}} </div>
 </template>
 
 <style scoped>
