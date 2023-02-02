@@ -2,20 +2,14 @@
   export default{
     data(){
       return{
-        mas: [1, 2, 3],
-        arr: ['x', 'y', 'z'],
+        obj:{x:1, y:2, z:3},
       }
     }
   }
 </script>
 
 <template>
-  <div>
-    <p>{{arr[0]}}</p>
-    <p>{{arr[1]}}</p>
-    <p>{{arr[2]}}</p>
-  </div>
-    {{mas[0]+ mas[1]+mas[2]}}
+    {{obj['x'] + obj['y'] + obj['z']}}
 </template>
 
 <style scoped>
