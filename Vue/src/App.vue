@@ -2,16 +2,15 @@
   export default{
     data(){
       return{
-        name:'David',
-        surn:'Avagyan',
+        text: 'Welcome to my website',
+        href: 'page.html',
       }
     }
   }
 </script>
 
 <template>
-  <div> {{name}} </div>
-  <div> {{surn}} </div>
+  <a href="page.html">{{text}}</a>
 </template>
 
 <style scoped>
