@@ -1,18 +1,21 @@
 <script>
-  export default{
+  export default {
     data(){
-      
+      return{
+        num1: 1,
+        num2: 2,
+      }      
     },
     methods: {
       show: function(){
-        alert('3.02.2023');
+        alert(this.num1+ this.num2);
       }
     }
   }
 </script>
 
 <template>
-    <button @mouseenter="show"> text </button>
+    {{ show() }}
 </template>
 a
 <style scoped>
