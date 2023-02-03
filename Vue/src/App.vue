@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    {{ show() }}
+    <button @click="show"> text </button>
 </template>
 a
 <style scoped>
