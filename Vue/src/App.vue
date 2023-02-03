@@ -1,17 +1,20 @@
 <script>
   export default{
     data(){
-      return{
-        obj:{x:1, y:2, z:3},
+      
+    },
+    methods: {
+      show: function(){
+        alert('3.02.2023');
       }
     }
   }
 </script>
 
 <template>
-    {{obj['x'] + obj['y'] + obj['z']}}
+    {{ show() }}
 </template>
-
+a
 <style scoped>
 header {
   line-height: 1.5;
