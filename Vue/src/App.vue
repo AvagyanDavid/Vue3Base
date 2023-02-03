@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <button @click="show"> text </button>
+    <button @mouseenter="show"> text </button>
 </template>
 a
 <style scoped>
