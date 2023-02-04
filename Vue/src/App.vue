@@ -1,15 +1,19 @@
 <script>
-  export default{
+  export default {
     data(){
       
     },
     methods: {
-      show: function(){
-        alert('3.02.2023');
+      showdate: function(){
+		    alert(new Date());
       }
     }
   }
 </script>
+
+<template>
+    {{ showdate() }}
+</template>
 
 <template>
     {{ show() }}
