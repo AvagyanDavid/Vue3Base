@@ -8,10 +8,10 @@ export default {
   methods: {
     change1: function() {
 
-      this.text = 'yyy';
+      this.text = 'молодец, ты изменил текст';
     },
     change2: function() {
-      this.text = 'zzz';
+      this.text = 'ВАААУУ ТЫ МОГ ЕЩЁ АЗ ИЗМЕНИТЬ ТЕКСТ, ДА ТЫ ЛУЧШИЙ';
     } 
   } 
 }
