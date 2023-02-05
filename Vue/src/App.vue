@@ -1,19 +1,27 @@
 <script>
 export default {
     data() {
-	    
-  },  
-	methods: {
-	show: function(int) {
-		alert(int * int);
-	}
-}
+	    return{
+        text : 'xxx',
+      }
+    },
+  methods: {
+    change1: function() {
+
+      this.text = 'yyy';
+    },
+    change2: function() {
+      this.text = 'zzz';
+    } 
+  } 
 }
 </script>
 
 <template>
-  <button @click="show(2)">квадрат двойки</button>
-  <button @click="show(3)">квадрат тройки</button>
+  <h1> {{text}} </h1>
+  <br>
+  <button @click="change1">text1</button>
+  <button @click="change2">text2</button>
 </template>
 
 <style scoped>
