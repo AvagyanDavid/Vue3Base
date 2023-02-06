@@ -1,27 +1,25 @@
 <script>
 export default {
     data() {
-	    return{
-        text : 'xxx',
-      }
+	    return {
+		    cost: '500',
+		    amount: '4',
+	    }
     },
-  methods: {
-    change1: function() {
-
-      this.text = 'молодец, ты изменил текст';
-    },
-    change2: function() {
-      this.text = 'ВАААУУ ТЫ МОГ ЕЩЁ РАЗ ИЗМЕНИТЬ ТЕКСТ, ДА ТЫ ЛУЧШИЙ';
-    } 
-  } 
+  computed: {
+	  price: function() {
+		  return this.cost * this.amount;
+	  }
+  }
 }
 </script>
 
 <template>
-  <h1> {{text}} </h1>
+  <p>Цена данного продукта {{ cost }}</p>
   <br>
-  <button @click="change1">text1</button>
-  <button @click="change2">text2</button>
+	<p>Количество {{ amount }}</p>
+  <br>
+	<p>Стоимость {{ price }}</p>
 </template>
 
 <style scoped>
