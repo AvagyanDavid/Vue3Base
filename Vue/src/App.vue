@@ -2,13 +2,18 @@
 export default {
     data() {
 	    return {
-		    cost: '500',
-		    amount: '4',
+		    cost: 500,
+		    amount: 4,
 	    }
     },
+  methods:{
+    change: function() {
+      this.cost = this.cost +300; 
+    }
+  },
   computed: {
 	  price: function() {
-		  return this.cost * this.amount;
+      return this.cost * this.amount;
 	  }
   }
 }
@@ -20,6 +25,7 @@ export default {
 	<p>Количество {{ amount }}</p>
   <br>
 	<p>Стоимость {{ price }}</p>
+  <button @click = "change"> инфляция </button>
 </template>
 
 <style scoped>
