@@ -1,18 +1,12 @@
 <script>
 export default {
     data() {
-	    return{
-        text : 'xxx',
-      }
+	    
     },
   methods: {
-    change1: function() {
-
-      this.text = 'молодец, ты изменил текст';
-    },
-    change2: function() {
-      this.text = 'ВАААУУ ТЫ МОГ ЕЩЁ АЗ ИЗМЕНИТЬ ТЕКСТ, ДА ТЫ ЛУЧШИЙ';
-    } 
+    show: function(int) {
+      alert(int * int );
+    }
   } 
 }
 </script>
@@ -20,8 +14,8 @@ export default {
 <template>
   <h1> {{text}} </h1>
   <br>
-  <button @click="change1">text1</button>
-  <button @click="change2">text2</button>
+  <button @click="show(2)">квадрат двойки</button>
+  <button @click="show(3)">квадрат тройки</button>
 </template>
 
 <style scoped>
